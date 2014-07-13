@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0037)http://cxsjsxmooc.openjudge.cn/hw6/A/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>OpenJudge - A: World of Warcraft Redux</title>
+
+<link href="./OpenJudge - A  World of Warcraft Redux_files/global.css" media="screen" rel="stylesheet" type="text/css">
+<link href="./OpenJudge - A  World of Warcraft Redux_files/styles.css" media="screen" rel="stylesheet" type="text/css">
+<link href="./OpenJudge - A  World of Warcraft Redux_files/group.css" media="screen" rel="stylesheet" type="text/css">
+<link href="./OpenJudge - A  World of Warcraft Redux_files/contest.css" media="screen" rel="stylesheet" type="text/css">
+<link href="http://static.openjudge.cn/styles/favicon.ico?1282920127.ico" rel="shortcut icon" type="image/x-icon">
+<!--[if IE]>
+   <script type="text/javascript" src="http://static.openjudge.cn/scripts/html5.js?1304149352.js"></script>
+<![endif]-->
+<!--[if lt IE 7]>
+	<link type="text/css" href="http://static.openjudge.cn/styles/ie6-deprecated.css?1304540848.css" rel="stylesheet" />
+<![endif]-->
+<!--[if IE 7]>
+	<link type="text/css" href="http://static.openjudge.cn/styles/ie7.css?1282920127.css" rel="stylesheet" />
+<![endif]-->
+<!--[if IE 8]>
+	<link type="text/css" href="http://static.openjudge.cn/styles/ie8.css?1282920127.css" rel="stylesheet" />
+<![endif]-->
+<script type="text/javascript" src="./OpenJudge - A  World of Warcraft Redux_files/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="./OpenJudge - A  World of Warcraft Redux_files/jquery.form.js"></script>
+<script type="text/javascript" src="./OpenJudge - A  World of Warcraft Redux_files/base-nc.js"></script>
+<script type="text/javascript" src="./OpenJudge - A  World of Warcraft Redux_files/api.js"></script>
+<script type="text/javascript">
+    //<![CDATA[
+var web_root = '/',
+	static_root = 'http://static.openjudge.cn/',
+	script_root = 'http://static.openjudge.cn/scripts',
+	style_root = 'http://static.openjudge.cn/styles';
+    //]]>
+</script><link type="text/css" rel="stylesheet" charset="UTF-8" href="./OpenJudge - A  World of Warcraft Redux_files/translateelement.css"></head>
+<body>
+	<div id="headerTop">
+  <div class="wrapper">
+    <h1 class="logo"><a href="http://openjudge.cn/" title="Home" rel="home"><font><font>OpenJudge</font></font></a></h1>
+    <ul id="userToolbar">
+            <li><a class="link" href="http://cxsjsxmooc.openjudge.cn/auth/login/"><font><font>Sign in</font></font></a></li>
+      <li><a class="link" href="http://cxsjsxmooc.openjudge.cn/register/"><font><font>Registration</font></font></a></li>
+          </ul>
+    <div class="practice-search">
+		 <form class="search-form" action="http://cxsjsxmooc.openjudge.cn/search/" method="get">
+	        <input name="q" type="text" value="题目ID, 标题, 描述" onclick="this.select()">
+	        <button type="submit"></button>
+	     </form>	
+	</div>
+    <div style="clear:both;"></div>
+  </div>
+</div>
+	
+	<div id="header">
+  <div class="wrapper">
+  	<div id="groupSmallLog">
+  		<a href="http://cxsjsxmooc.openjudge.cn/"><img class="group-logo" src="./OpenJudge - A  World of Warcraft Redux_files/default_logo_small.png" alt="MOOC internship program design" width="50" height="50"></a>    </div>
+	<div class="contest-title-tab">
+		 <h2><a href="http://cxsjsxmooc.openjudge.cn/" title="Home" rel="home"><font><font>MOOC internship program design</font></font></a></h2>
+		 <span><font><font>/</font></font></span>
+		 <h2><font><font>World of Warcraft III: The sixth week programming assignments</font></font></h2>
+		<span style="font-size:14px;"><font><font>Has ended</font></font></span>	</div>
+    <ul id="mainNav">
+        <li class="current"><a href="http://cxsjsxmooc.openjudge.cn/hw6/" class="first"><font><font>Topic</font></font></a></li>
+            <li><a href="http://cxsjsxmooc.openjudge.cn/hw6/ranking/"><font><font>Rank</font></font></a></li>
+                    <li><a href="http://cxsjsxmooc.openjudge.cn/hw6/status/"><font><font>Status</font></font></a></li>
+	     
+        <li><a href="http://cxsjsxmooc.openjudge.cn/hw6/statistics/"><font><font>Statistics</font></font></a></li>
+				        <li class="last"><a href="http://cxsjsxmooc.openjudge.cn/hw6/clarify/" class="last"><font><font>Question</font></font></a></li>
+        </ul>	 
+    <div style="clear:both;"></div>
+  </div>
+</div>	
+	<div id="pagebody">
+		<div class="wrapper">
+			<script type="text/javascript">
+$(function(e){
+  var b={1:"很水",2:"简单",3:"普通",4:"较难",5:"变态"},
+      g=$("#rate"),
+      c=$("#stars img"),
+      d=function(f){
+        var h=0||g.val();
+        c.each(function(k){
+          var i=this.src.replace(/\w*\.gif$/,((k<f)?"sth":((k<h)?"st":"nst"))+".gif");
+          this.src=i;
+        });
+        if(f)
+          $("#rate_description").text(b[f]);
+        else
+          $("#rate_description").text(h!=0?b[h]:"");
+      };
+      c.hover(function(){d(this.id.charAt(4));},function(){d();});
+      if(g.attr("value")){
+        c.click(function(){
+          var f=this.id.charAt(4);
+          g.val(f);
+          d(f);
+          //$('#form_diffculity_rating').submit();
+          $( "#dialog-form" ).dialog( "open" );
+			g();
+        });
+      }
+      d();
+  });
+$(document).ready(
+		function(){
+			$('#problem-tags').hide();
+			$('#tag-display').toggle(function() {
+											$('#problem-tags').show();
+											this.value = '隐藏标签';
+										}, function(){
+											$('#problem-tags').hide();
+											this.value = '显示标签';
+										}
+									);
+			});
+</script>
+
+<div id="pageTitle"><h2><font><font>A: World of Warcraft Redux</font></font></h2></div>
+<div id="topMenu">
+	<ul>
+		<li class="current-show"><a href="./OpenJudge - A  World of Warcraft Redux_files/OpenJudge - A  World of Warcraft Redux.html"><font><font>Check out</font></font></a></li>
+		<li><a href="http://cxsjsxmooc.openjudge.cn/hw6/A/submit/"><font><font>Submit</font></font></a></li>
+				<li><a href="http://cxsjsxmooc.openjudge.cn/hw6/A/statistics/"><font><font>Statistics</font></font></a></li>
+			
+		<li><a href="http://cxsjsxmooc.openjudge.cn/hw6/clarify/A/"><font><font>Question</font></font></a></li>
+			
+	</ul>
+</div><div class="problem-page col-9">
+	<dl class="problem-params">
+		<dt><font><font>Total time limit: </font></font></dt>
+		<dd><font><font>2000ms</font></font></dd>
+			<dt><font><font>Memory Limit: </font></font></dt>
+		<dd><font><font>65536kB</font></font></dd>
+	</dl>
+	<dl class="problem-content">
+		<dt><font><font>Description</font></font></dt>
+		<dd><p><font><font>World of Warcraft is west of the Red Devils army headquarters, east of the Blue Devils Army headquarters. </font><font>Between the two headquarters are in turn arranged a number of cities, cities are numbered from west to east as 1,2,3 .... N (N &lt;= 20). </font><font>Red Devils Army Command counted numbered 0 cities Blue Devils Army Command counted number N +1 of the city. </font><font>There are life-million headquarters for the manufacture of the samurai.</font></font></p><p><font><font>Command armies will manufacture warrior. </font><font>A total warrior dragon, ninja, iceman, lion, wolf five. </font><font class="">Each warrior has a number, the value of life, attack these three attributes.</font></font></p><p><font><font>Both sides of the samurai numbers are calculated starting from 1. </font><font>Red side manufactured the n-th warrior, number is n. </font><font>Similarly, the blue side manufactured the n-th warrior, numbers also n.</font></font></p><p><font><font class="">Samurai in just born when there is an initial value of life, the value of life will change in the battle, if the reduction in the value of life to 0 (the value of life becomes negative when treatment should be done to 0), then the warrior died (disappeared).</font></font></p><p><font><font>Some warriors can have weapons. </font><font class="">There are three weapons, sword, bomb, and arrow, numbered 0,1,2.</font></font></p><p><font><font>Command warrior born after walking toward each other, after the city if you encounter an enemy (only up to the same time in each city may have a blue and a red samurai warriors) will fight happen. </font><font>Only one of each battle launched the initiative to attack again. </font><font>ATK value is subtracted from the value of life attacker attacker's attack value and the sword in the hands of the attackers. </font><font>If the attacker is attacking force values ​​did not die, they will fight back, is the value of life back to those who counter attack minus half the value (rounded to the tail) and counterattack sword in the hands. </font><font>To counter possible enemy to death.</font></font></p><p><font><font>If the warriors to kill the enemy in combat (whether active or counter attack kills kills), its headquarters immediately to send eight lives yuan as a reward, it increases the value of life 8. </font><font>Of course, the premise is the headquarters element of life must have eight. </font><font>If Command element of life is not enough reward for all the warriors, the priority reward from the enemy's headquarters near the warrior.</font></font></p><p><font><font>If a warrior in the battle to kill the enemy in a certain city, the headquarters of the samurai get all of the city's life yuan immediately. </font><font>Note that the command is always the first to complete all work incentives, and then began recovering from life-yuan each won the battle of the city. </font><font>For headquarters element of life due to lack of incentives not receive samurai, headquarters will not get the trophy after their replacement life yuan reward.</font></font></p><p><font><font>If the result is both a battle to survive (tie), then both sides are fighting can not take away the life of the city, respectively.</font></font></p><p><font><font>The city can insert flag, a flag to start all cities are not. </font><font>Plug the red flag in the city, as well as odd-numbered no flag city, initiated by the Red Knight attack. </font><font>Plug the blue flag of the city, and even-numbered no flag city, initiated by the Blue Samurai attack.</font></font></p><p><font><font>When a city has two consecutive warriors are fighting on the same side to kill the enemy (the battle between the two fighting if there are several moments and no fighting occurred, the battle is still regarded as two consecutive; But if there is a tie in the middle battle, it is not continuous), then the city will plug the winning party banner, if the original flag stuck loser, the loser flag fall. </font><font>Banner Once plugged in, it has been stuck until replaced enemies. </font><font>A city can only insert a banner, the banner is not to replace the former enemy, nor flags of the same color again.</font></font></p><p><font><font>A variety of weapons has its own characteristics:</font></font></p><p><font><font>20% of initial attack sword weapon to have its warriors attack power (rounded to the tail). </font><font>But the sword after every battle (whether active attack or counter-attack), it will blunt the attack force becomes 80% of the time before the battle (rounded to the tail). </font><font>sword attack force becomes 0, regarded as warriors lost sword. </font><font>If when you get a warrior born for the sword 0 initial attack, then regarded as the warrior no sword.</font></font></p><p><font><font>arrow has an attack value of R. </font><font>If the next step is to go to the city there is an enemy, then have a samurai arrow next city will throw the enemy attack (can not attack each other in the headquarters of the enemy) without being hit back. </font><font>arrow to reduce the value of the lives of the enemy R, if reduced to less than or equal to 0, then the enemy were killed. </font><font>Use the arrow three times Jibei exhausted warriors lost arrow. </font><font>Two adjacent to each other warriors may also throw shot.</font></font></p><p><font><font>Samurai has a bomb, and if it is determined before the battle began that he would be killed (whether the initiative to attack the enemy, or is the initiative to attack the enemy could cause himself to be killed, and assuming warriors can attack the enemy and know the value of life), then will use the bomb and enemies die. </font><font>Samurai do not predict whether the other party will use the bomb.</font></font></p><p><font><font>The case of the use of bomb and enemy warriors die, and not a battle, both sides can not take away the life of the city element, does not affect the city's flag.</font></font></p><p><font><font>Different samurai has different characteristics.</font></font></p><p><font><font>dragon can have a weapon. </font><font>That number is n% 3 obtained the weapon number n dragon born. </font><font>dragon and "morale" This property is a float, its value is the number of its headquarters after it was born, divided by the remaining life per dollar dragon made the required number of lives. </font><font>dragon at the end of it in a proactive battle, if not killed, but the morale of the value is greater than 0.8, it will cheer. </font><font>dragon made once per battle victory (the enemy is killed), morale will increase 0.2 per experiencing a failure to win the battle, the morale value will be reduced to 0.2. </font><font>Morale change occurs before cheering.</font></font></p><p><font><font>ninjia can have two weapons. </font><font>That number is obtained and the number of n% 3 (n +1)% 3 n of the weapon ninjia born. </font><font>ninja never beaten the enemy counterattack.</font></font></p><p><font><font>iceman has a weapon. </font><font>That number is n% 3 obtained the weapon number n iceman born. </font><font>iceman every two steps forward, in step 2, when completed, will reduce the value of life 9, attack power will increase by 20. </font><font>But if the life will be less than 9 after less equal to 0, then the value of life diminished 9, but becomes one. </font><font>That will not go much iceman died.</font></font></p><p><font><font>lion of "loyalty" of this property, its initial value equal to the number of its headquarters after it was born of the remaining element of life. </font><font>After a failure to kill every enemy combatants, loyalty, reduces K. </font><font>Loyalty to 0 or below zero, the lion away from the battle, lost forever. </font><font>But the enemy has reached the headquarters of the lion will not escape. </font><font>Lion may escape in one's own headquarters. </font><font>If the lion died, his health before the battle will be transferred to the opponent's body. </font><font>The so-called "ex-combatants" is the moment every hour and 40 minutes ago.</font></font></p><p><font><font>when the wolf was born without arms, but if you win in the battle (to kill), they will seize the enemy's weapons, but they do not have weapons seized. </font><font>Of course, being seized weapons can not be considered new, what has been used, that is what.</font></font></p><p><font><font>The following are the different events occur at different times:</font></font></p><p><font><font>In each whole point, that each hour 0 minutes, the two sides have a warrior born in headquarters.</font></font></p><p><font><font>Red Square headquarters manufacturing warrior in order iceman, lion, wolf, ninja, dragon's.</font></font></p><p><font><font>Blue Square headquarters manufacturing warrior in order lion, dragon, ninja, iceman, wolf's.</font></font></p><p><font><font>Manufacturing warriors need the element of life.</font></font></p><p><font><font>Manufacture an initial value of m samurai life, headquarters of the yuan would reduce the life of m.</font></font></p><p><font><font>If Command element in the life of a warrior is not sufficient to manufacture, then Command would wait until the whole point of the first element of life after sufficient only to manufacture the samurai. </font><font>For example, at 2:00, the red side of the headquarters of the manufacture of a wolf, if insufficient element of life at this time, it will wait until the next full point after a sufficient element of life, only to make a wolf.</font></font></p><p><font><font>In the first five minutes of each hour, the escaped lion escaped in this moment.</font></font></p><p><font><font>In the first 10 minutes of each hour: All samurai direction toward the front of the enemy headquarters further. </font><font>That come from one's own headquarters adjacent to the city, or go from one city to the next city. </font><font>Or from the enemy headquarters and neighboring cities to reach the enemy headquarters.</font></font></p><p><font><font>In the first 20 minutes of each hour: 10 outputs each city life yuan. </font><font>Element of life left in the city, until they were removed warrior.</font></font></p><p><font><font>In the first 30 minutes of each hour: If a city is only a warrior, then the warrior removed the element of all life in the city, and immediately transferred to the headquarters element of these life to which they belong.</font></font></p><p><font><font>In the first 35 minutes of each hour, with arrow warriors throw the damage on the enemy. </font><font>Throw the incident occurred in the city of arrows should be considered issued. </font><font>Note that the throw is not fighting, so throw the samurai will not get any benefit. </font><font>No enemy warriors in the city was shot dead in the banner of the city does not affect its replacement case.</font></font></p><p><font><font>In the first 38 minutes of each hour, the warrior has a bomb should be used to assess whether the bomb. </font><font>If yes, then die with bomb and enemies.</font></font></p><p><font><font>In the first 40 minutes of each hour: there are two warriors in the city, will be fighting. </font><font>If the enemy in five minutes before flying arrow has been shot, then still seen as a battle took place, and the survivors were considered gained victory in battle. </font><font>There will be no "active attacks warrior", "warrior fight back", "warrior killed," the events in this case, but things should happen after the victory of the battle will occur. </font><font>If Wolf can be seized as weapons, flags may also be replaced, and so on. </font><font>In this case, Dragon will also determine whether it should turn by attacking their own initiative to decide whether to cheer.</font></font></p><p><font><font>In the first 50 minutes of each hour, the number of lives per Command reported that it owns.</font></font></p><p><font><font>In the first 55 minutes of each hour, each warrior weapons case report of its own.</font></font></p><p><font><font>Even after the completion of the samurai reach the other Command task, since it stay there doing nothing.</font></font></p><p><font><font>If any party headquarters in the emergence of two enemies, then that the headquarters had been occupied by the enemy.</font></font></p><p><font><font>Command of any party occupied the enemy, then the war ended. </font><font>After the end of the war would not have happened any thing.</font></font></p><p><font><font>Given a time, requiring you to start from 0:00 until all of the events this time sequentially output. </font><font>Events and their corresponding output sample as follows:</font></font></p><p><br></p><dl><dt><font><font>1) warrior born</font></font></dt><dd><p><font><font>Sample output: 000:00 blue lion 1 born</font></font></p><p><font><font>Said at 0:00, the Blue Devils No. 1 lion warrior born </font></font><br><font><font>if create a dragon, so even more output line, for example:</font></font></p><p><font><font>000:00 born blue Dragon 1 </font></font><br><font><font>23.34 Its Morale is </font><font>said that the dragon was born when morale is 23.34 (rounded to two decimal places)</font></font><br><br><font></font></p><p><font><font>If you create a lion, so even more output line, for example: </font></font><br><font><font>000:00 blue Lion 1 born </font></font><br><font><font>24 Its loyalty is </font><font>loyalty, said when the lion was born 24</font></font><br><br><font></font></p></dd><dt><font><font>2) lion escape</font></font></dt><dd><p><font><font>Sample output: 000:05 blue lion 1 ran away </font></font><br><font><font>, said at 0:05, No. 1 Blue Devils lion warrior escape</font></font></p></dd><dt><font><font>3) to advance to a city warrior</font></font></dt><dd><p><font><font>Sample output: 000:10 red iceman 1 marched to city 1 with 20 elements and force 30 </font></font><br><font><font>shows 0:10, the Red Devils No. 1, No. 1, samurai iceman forward to the city, this time in his life is 20, attack power is 30 </font></font><br><font><font>For the iceman, the value of life and attack power output value after the change should be</font></font></p></dd><dt><font><font>4) Samurai throw</font></font></dt><dd><p><font><font>Sample output: 000:35 blue dragon 1 shot </font></font><br><font><font>shows 0:35, No. 1 Blue Devils dragon warrior shot an arrow. </font><font>If the arrows are sent forth to kill the enemy, should the following output: </font></font><br><font><font>000:35 blue Dragon 1 SHOT and killed 4 red Lion </font></font><br><font><font>said in 0:35, No. 1 Blue Devils dragon warrior shot an arrow and killed the number 4 Red Devils lion.</font></font></p></dd><dt><font><font>5) Samurai use bomb</font></font></dt><dd><p><font><font>Sample output: 000:38 blue dragon 1 used a bomb and killed red lion 7 </font></font><br><font><font>shows 0:38, No. 1 Blue Devils dragon warrior for the Red Devils with bombs and number 7 lion die.</font></font></p></dd><dt><font><font>6) Samurai proactive</font></font></dt><dd><p><font><font>Sample output: 000:40 red iceman 1 attacked blue lion 1 in city 1 with 20 elements and force 30 </font></font><br><font><font>shows 0:40, the 1st city, the Red Devils on the 1st Samurai Blue Devils on the 1st offensive iceman warrior lion, in the attack ago, the Red Devils on the 1st warrior iceman life is 20, attack power is 30</font></font></p></dd><dt><font><font>7) warriors back</font></font></dt><dd><p><font><font>Sample output: 001:40 blue dragon 2 fought back against red lion 2 in city 1 </font></font><br><font><font>shows 1:40, the 1st city, the Blue Devils on the 2nd warrior dragon warrior lion counterattack Reds 2</font></font></p></dd><dt><font><font>8) warrior killed</font></font></dt><dd><p><font><font>Sample output: 001:40 red lion 2 was killed in city 1 </font></font><br><font><font>was shot dead warriors would not have this one output.</font></font></p></dd><dt><font><font>9) Samurai cheer</font></font></dt><dd><p><font><font>Sample output: 003:40 blue dragon 2 yelled in city 4</font></font></p></dd><dt><font><font>10) Samurai Gets Life yuan (elements)</font></font></dt><dd><p><font><font>Sample output: 001:40 blue dragon 2 earned 10 elements for his headquarter</font></font></p></dd><dt><font><font>11) raised the banner</font></font></dt><dd><p><font><font>Sample output: 004:40 blue flag raised in city 4</font></font></p></dd><dt><font><font>12) Samurai arrived enemy headquarters</font></font></dt><dd><p><font><font>Sample output: 001:10 red iceman 1 blue Headquarter reached with 20 elements and Force 30 </font></font><br><font><font>(At this point in his life is 20, attack power of 30) for the iceman, the output value of life and the attack force should be altered value</font></font></p></dd><dt><font><font>13) occupied the headquarters</font></font></dt><dd><p><font><font>Sample output: 003:10 blue headquarter was taken</font></font></p></dd><dt><font><font>14) Command reported the number of million lives</font></font></dt><dd><p><font><font>100 elements in red Headquarter 000:50 </font></font><br><font><font>000:50 120 elements in blue Headquarter </font></font><br><font><font>said in 0:50, Red Square headquarters has 100 life-yuan, Blue Square has 120</font></font></p></dd><dt><font><font>15) warrior weapon case report</font></font></dt><dd><p><font><font>000:55 Wolf 2 has blue arrow (2), Bomb, sword (23) </font></font><br><font><font>000:55 blue Wolf has no Weapon 4 </font></font><br><font><font>5 000:55 blue Wolf has sword (20) </font></font><br><font><font>, said at 0:55, the Blue Devils on the 2nd warrior wolf have a arrow (arrow Zhezhi 2 can also be used), a bomb, there is an attack of the sword 23. </font></font><br><font><font>Blue Devils on the 4th warrior wolf no weapons. </font></font><br><font><font>No. 5 Blue Devils have a warrior wolf attack to the sword 20. </font></font><br><font><font>When account weapon, the order followed: arrow, bomb, sword. </font><font>Without a weapon, a weapon Jiubuyongti. </font><font>When reporting, and then press the Blue Samurai all order from west to east, the report all the red samurai reports from west to east.</font></font></p></dd></dl><p><font><font>Output event:</font></font></p><p><font><font>First output in chronological order;</font></font></p><p><font><font>Events occur at the same time, according to occur sequentially output from west to east locations. Event warrior forward, regarded as occurring at the destination.</font></font></p><p><font><font>There are likely to occur at the 6-11 incident in a battle. </font><font>These events are considered simultaneously, the time is the time the fighting began. </font><font>A battle of these events, a small number should be output.</font></font></p><p><font><font>Two warriors arrived in the same city at the same time, the first output forward events red samurai, samurai blue after output.</font></font></p><p><font><font>Obviously, on the 13th before the incident took place on the 12th instant certain events. </font><font>Output, two things happen at the same time count, but the output should be the 12th event</font></font></p><p><font><font>Although any party headquarters after the occupation, there would be nothing happened. </font><font>But headquarters was occupied and simultaneous events, all to be output.</font></font></p></dd>
+				
+				
+				<dt><font><font>Enter</font></font></dt>
+		<dd><p><font><font>The first line is t, the number of data sets representative of the test </font></font><br><font><font>sample in each of three lines. </font></font><br><font><font>The first row, five integers M, N, R, K, T. </font><font>Its meaning is: </font><font>the beginning of each command has a life element M (1 &lt;= M &lt;= 10000) </font><font>between the two cities, the headquarters of a total of N (1 &lt;= N &lt;= 20) </font><font>arrow attack is R </font><font>Lion failed to kill every enemy after a battle, loyalty, reduces K. </font><font>Requires that the output from 0:00 start date to the time T (including T) for all events. </font><font>T in minutes, 0 &lt;= T &lt;= 5000 </font><font>Second row: five integers, followed dragon, the initial value of life ninja, iceman, lion, wolf's. </font><font>They are larger than 0 and less than equal to 10,000 </font><font>third line: five integers, followed dragon, attack ninja, iceman, lion, wolf's. </font><font>They are larger than 0 and less than equal to 10000</font></font><br><br><font></font><br><font></font><br><font></font><br><font></font><br><font></font><br><br><font></font><br><br><font></font></p></dd>
+		<dt><font><font>Export</font></font></dt>
+		<dd><p><font><font>For each set of data, the first output line: </font></font><br><font><font>Case N: </font></font><br><font><font>As to the first set of data on output Case1: </font></font><br><font><font>then press the appropriate order and format of the output to all events until the time T occurs. </font><font>Each event in the beginning of the time the event occurred, the time format is "hh: mm", "when" there are three "stars" there are two.</font></font></p></dd>
+		<dt><font><font>Sample Input</font></font></dt>
+		<dd><pre><font><font>1</font></font><font></font><font><font>
+20 1 10 10 1000</font></font><font></font><font><font>
+20 20 30 10 20</font></font><font></font><font><font>
+5 5 5 5 5</font></font></pre></dd>
+		<dt><font><font>Sample Output</font></font></dt>
+		<dd><pre><font><font>Case 1:</font></font><font></font><font><font>
+000:00 blue lion 1 born</font></font><font></font><font><font>
+Its loyalty is 10</font></font><font></font><font><font>
+000:10 blue lion 1 marched to city 1 with 10 elements and force 5</font></font><font></font><font><font>
+000:30 blue lion 1 earned 10 elements for his headquarter</font></font><font></font><font><font>
+000:50 20 elements in red headquarter</font></font><font></font><font><font>
+000:50 20 elements in blue headquarter</font></font><font></font><font><font>
+000:55 blue lion 1 has no weapon</font></font><font></font><font><font>
+001:00 blue dragon 2 born</font></font><font></font><font><font>
+Its morale is 0.00</font></font><font></font><font><font>
+001:10 blue lion 1 reached red headquarter with 10 elements and force 5</font></font><font></font><font><font>
+001:10 blue dragon 2 marched to city 1 with 20 elements and force 5</font></font><font></font><font><font>
+001:30 blue dragon 2 earned 10 elements for his headquarter</font></font><font></font><font><font>
+001:50 20 elements in red headquarter</font></font><font></font><font><font>
+001:50 10 elements in blue headquarter</font></font><font></font><font><font>
+001:55 blue lion 1 has no weapon</font></font><font></font><font><font>
+001:55 blue dragon 2 has arrow (3)</font></font><font></font><font><font>
+002:10 blue dragon 2 reached red headquarter with 20 elements and force 5</font></font><font></font><font><font>
+002:10 red headquarter was taken</font></font></pre></dd>
+						</dl>
+	<ul class="bottomMenu">
+		<li class="current-show"><a href="./OpenJudge - A  World of Warcraft Redux_files/OpenJudge - A  World of Warcraft Redux.html"><font><font>Check out</font></font></a></li>
+		<li><a href="http://cxsjsxmooc.openjudge.cn/hw6/A/submit/"><font><font>Submit</font></font></a></li>
+				<li><a href="http://cxsjsxmooc.openjudge.cn/hw6/A/statistics/"><font><font>Statistics</font></font></a></li>
+			
+		<li><a href="http://cxsjsxmooc.openjudge.cn/hw6/clarify/A/"><font><font>Question</font></font></a></li>
+			</ul>
+</div>
+
+<div class="problem-statistics col-3">
+       		<dl>
+		<dt><font><font>Global Question</font></font></dt>
+		<dd><font><font>3433</font></font></dd>
+				<dt><font><font>Commits</font></font></dt>
+		<dd><font><font>704</font></font></dd>
+		<dt><font><font>Number of attempts</font></font></dt>
+	    <dd><font><font>203</font></font></dd>
+	    <dt><font><font>By the number</font></font></dt>
+	    <dd><font><font>163</font></font></dd>
+	</dl>
+		
+		
+					
+	</div>
+		</div>
+	</div>
+	<div id="footer">
+	<div class="wrapper">
+		<ul class="oj-info">
+			<li><font><font>© 2002-2013 POJ Shanghai ICP No. 12005590 -3</font></font></li>
+		</ul>
+		<ul class="debug-info">
+									<li>
+				<a style="color:red" href="javascript:void(0);" onclick="api.switchLanguage(&#39;en_US&#39;);"><font><font>English</font></font></a></li>
+						<li><a href="http://openjudge.cn/help.html" rel="nofollow"><font><font>Help</font></font></a></li>
+			<li><a href="http://openjudge.cn/about.html" rel="nofollow"><font><font>With respect to</font></font></a></li>
+		</ul>
+		<div style="clear:both;"></div>
+	</div>
+</div><div id="goog-gt-tt" class="goog-tooltip skiptranslate" dir="ltr" style="visibility: hidden; left: 548px; top: 570.6666870117188px; display: none;"><div style="padding: 8px;"><div><div class="logo"><img src="./OpenJudge - A  World of Warcraft Redux_files/translate-32.png" width="20" height="20"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text">武士在刚降生的时候有一个初始的生命值，生命值在战斗中会发生变化，如果生命值减少到0（生命值变为负数时应当做变为0处理），则武士死亡（消失）。</div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none; opacity: 0;"></div></div>
+
+	
+	
+
+</body></html>

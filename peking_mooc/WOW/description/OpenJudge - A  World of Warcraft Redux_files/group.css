@@ -1,0 +1,976 @@
+@CHARSET "UTF-8";
+
+.wrapper{
+	width:932px;
+	margin:0 auto;
+}
+a {
+	color:#3B5998;
+	text-decoration: none; 
+	outline:none;
+}
+a:hover {color:#F24A33;text-decoration: underline;}
+#pagebody .wrapper{
+	width:960px;
+	position:relative;
+	padding-top:30px;
+}
+#headerLine h1{
+	padding:14px 0 0 60px;
+}
+#headerLine img{
+	float:left;
+	margin-bottom:14px;
+}
+.group-name{
+	margin-bottom:30px;
+}
+.group-name h1{
+	font-size:25px;
+	float:left;
+}
+#headerTop{
+	background: url("images/vertical.gif") repeat-x scroll 0 -1570px #EDEDE9;
+}
+#headerTop a{
+	/* color:white; */
+	color:#585858;
+}
+#groupSmallLog{
+	width:50px;
+	height:50px;
+	float:left;
+}
+.annoucements{
+	background:#FFEFC6;
+	padding:10px;
+	margin-bottom:30px;
+}
+.group-name a{
+	font-size:12px;
+	background:#EEE;
+	border:1px solid;
+	border-color:#999999 #999999 #888888;
+	margin-left:9px;
+	padding:3px 4px;
+}
+.group-name p{
+	display:inline;
+}
+
+.group-info-setting ul li{
+	line-height:31px;
+	padding-right:10px;
+}
+.group-info-setting button{
+	margin-left:20px;
+}
+.group-info-setting dt{
+	width:50px;
+}
+/* group home page side */
+#groupBigLogo{
+	width:210px;
+	text-align:center;
+	margin-bottom:20px;
+}	
+#side .group-description{
+	background:#ECEFF5;
+	border:none;
+	padding:5px;
+}
+.group-description{
+	margin-bottom:10px;
+	font-size:12px;
+}
+.group-description ul li a{
+	border-bottom:1px solid #D8DFEA;
+	border-top:1px solid #D8DFEA;
+	font-weight:bold;
+	display:block;
+	padding:0 10px;
+}
+.group-setting{
+	margin-bottom:15px;
+	font-size:12px;
+}
+.group-setting li{
+	padding-left:3px;
+	border-bottom:1px solid #D8DFEA;
+}
+.admin-list, .new-group-user, .announcement{
+	border-right:1px solid #ECEFF5;
+}
+.admin-list h4,.new-group-user h4, .announcement h4{
+	background:#ECEFF5;
+	padding:1px 1px 1px 3px;
+	height:20px;
+	position:relative;
+}
+.admin-list ul,.new-group-user ul, .announcement ul{
+	padding:10px 0;
+	font-size:12px;
+}
+
+.admin-list ul li{
+	list-style:square inside none;
+	padding:0 3px;
+	display:inline;
+}
+.new-group-user h4 a{
+	font-size:12px;
+	position:absolute;
+	right:2px;
+}
+/* end of group home page side */
+
+/*  header  */
+#header .wrapper{
+	padding:25px 0 0;
+}
+#headerTop .logo{
+	float:left;
+	font-size:14px;
+}
+#userToolbar{
+	float:right;
+	position:relative;
+	z-index: 999;
+}
+#userToolbar,#headerTop .logo{
+	font-size:12px;
+	line-height:31px;
+}
+#userToolbar li{
+	float:left;	
+}
+#userToolbar .link{
+	padding:0 10px;
+}
+#headerTop #userToolbar .current a.link{
+    background:#FFFFFF;
+    color: #595959;
+    cursor: pointer;
+    z-index: 9999;
+}
+#userToolber .current .account-list{
+	border-top:none;
+}
+#userToolbar .account-list{
+	background: url("../images/layer_bg.png") repeat scroll 0 0 transparent;
+	border: 1px solid #797979;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+    overflow: hidden;
+    padding: 2px 1px 4px;
+    position: absolute;
+    right: 0;
+    top: 29px;
+    width: 130px;
+    display:none;
+    z-index: 999;
+}
+#headerTop #userToolbar .dis{
+	display:block;
+}
+#userToolbar .account-list li{
+	float:none;
+	display: block;
+}
+#userToolbar li a{
+	display:block;
+}
+#userToolbar a:hover,#userToolbar li:hover{
+	background:#E8E9EA;
+}
+.account-list dl{
+	overflow:hidden;
+}
+.w_arr_down{
+	background: url("../images/arrow-down-white.png") no-repeat scroll 100% 50% transparent;
+    padding-right:9px;
+}
+.account-list .line{
+	background: none repeat scroll 0 0 #E0E0E0;
+    font-size: 0;
+    height: 1px;
+    line-height: 0;
+    margin: 2px 0;
+    overflow: hidden;
+    padding: 0;
+}
+.account-list li a{
+	padding:0 8px;
+	height:28px;
+}
+#userToolbar .account-list dt{
+	float:left;
+	margin-left:5px;
+}
+#userToolbar .account-list dt, #userToolbar .account-list dd{
+	margin:3px 5px;
+}
+#userToolbar .account-list dt img{
+	width:32px;
+	height:32px;
+}
+#userToolbar .account-list ul{
+	padding:5px;
+}
+.search-form input{
+	height:27px;
+	width:413px;
+}
+.search-form button{
+	height:33px;
+	width:80px;
+}
+#searchHead{
+	margin:22px 0 0 83px;
+}
+/* end of header */
+
+/* table */
+table thead tr{
+	background:none repeat scroll 0 0 #E0EAF1;
+}
+table tbody tr{
+	border-bottom:1px dotted #CCCCCC;
+}
+table td,table th{
+	font-weight:normal;
+	padding:0 3px;
+}
+table .odd{
+	background:#E5E5E5;
+	text-align:center;
+}
+table .even{
+	background:#D5D5D5;
+	text-align:center;
+}
+.ratio, .accepted, .submissions, .rank, .alpha, .penalty, .date, .language, .spending-time, .memory,#contestStatistics table td,#contestStatistics table th{
+	text-align:center;
+}
+.penalty{
+	width:60px;
+}
+.alpha{
+	width:60px;
+}
+#contestStatistics .statistics-language, #contestStatistics .result, #contestStatistics .title,#contestStatistics .total{
+	width:42px;
+}
+/* end of table */
+
+/*  home page  */
+.label{
+	margin-bottom:25px;
+}
+.current-contest li{
+	margin-bottom:15px;
+	width:100%;
+}
+.label h3,.current-contest h3{
+	border-bottom:1px dotted #666666;
+	margin-bottom:5px;
+	padding-bottom:4px;
+}
+.label h3 span{
+	color:red;
+}
+.practice-info table{
+	width:100%;
+	font-size:12px;
+}
+.practice-info table tr td{
+	padding:0 25px 0 10px;
+}
+.practice-info,.discuss-info,.current-contest{
+	position:relative;
+	
+}
+.over-time{
+	color:#842829;
+	font-weight:bold;
+}
+.current-contest ul li{
+	margin-bottom:25px;
+}
+.coming-contest em{
+	float:right;
+	font-size:12px;
+}
+.recently-update, .over-time{
+	position:absolute;
+	z-index:10;
+	right:0;
+	top:0;
+}
+.practice-info ul,.discuss-info ul{
+	position:absolute;
+	top:0;
+	right:10px;
+}
+.practice-info ul li,.discuss-info ul li{
+	font-size:12px;
+	display:inline;
+	margin-left:15px;
+}
+.discuss-info{
+	margin-bottom:25px;
+}
+/*  end of home page  */
+
+#mainNav li{
+	background-color:#D8DFEA;
+	float:left;
+	margin:0 4px 0 0;
+	overflow:hidden;
+	position:relative;
+}
+#mainNav li a{
+	display:block;
+	font-size:14px;
+	font-weight:bold;
+	padding:3px 11px;
+	white-space:nowrap;
+}
+#mainNav{
+	font-weight:bold;
+	margin-left:60px;
+	padding-top:7px;
+}
+#mainNav .current{
+	margin-top:-2px;
+	margin-bottom:-2px;
+}
+#mainNav .current a{
+	color:#333333;
+	background:white;
+	padding:5px 10px 3px;
+}
+#mainNav .last{
+	border-right:none;
+}
+.honor{
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.honor-list dt{
+	float: left;
+    margin-bottom: 5px;
+    margin-right: 18px;
+}
+.honor-list dd{
+	margin-bottom:7px;
+	font-weight:bold;
+	font-size:14px;
+}
+.problem-page{
+	width:670px;
+}
+.problem-page p{
+	margin:15px 0;
+}
+/*
+.problem-page dl ul li{
+    list-style: square inside none;
+}
+*/
+.problem-page dl ol li{
+	margin-left: 30px;
+}
+.problem-page .bottomMenu{
+	margin-top:15px;
+}
+.problem-page .bottomMenu li{
+	display:inline;
+	border:1px solid #ccc;
+	margin-right:25px;
+}
+.problem-page .bottomMenu li a{
+	padding:0 12px;
+	line-height:25px;
+}
+.problem-params dd,.problem-params dt{
+	display:inline;
+}
+.problem-params dd{
+	margin-right:15px;
+}
+.problem-content dt{
+	font-size:16px;
+	font-weight:bold;
+	line-height:56px;
+}
+.contest-title-tab{
+	margin-left:60px;
+	padding-bottom:5px;
+}
+.contest-title-tab span{
+	font-size:16px;
+	font-weight:bold;
+}
+.contest-title-tab h2{
+	display:inline;
+}
+#pageTitle{
+	border-bottom:1px solid #666666;
+	padding-bottom:9px;
+	width:932px;
+	margin:0 0 20px 14px;
+}
+#pageTitle em{
+	color:#ccc;
+	margin-left:5px;
+	font-size:14px;
+}
+.practice-search{
+	float:right;
+	margin-left:10px;
+	margin-right: 15px;
+	position:relative;
+}
+#header{
+	background:#EDEFF4;
+}
+.practice-search input{
+	width:220px;
+	border-color:#CCCCCC -moz-use-text-color -moz-use-text-color #CCCCCC;
+	border-style:solid none none solid;
+	border-width:1px medium medium 1px;
+	margin-top:4px;
+	max-width:220px;
+	font-size:12px;
+	height:21px;
+}
+.practice-search button{
+	background:url("images/search.png") no-repeat scroll 0 1px #CCCCCC;
+	border:medium none;
+	cursor:pointer;
+	height:22px;
+	margin-top:4px;
+	position:absolute;
+	right:0;
+	top:0;
+	width:21px;
+}
+#problemsList table{
+	width:100%;
+}
+#problemsList table tr{
+	border-bottom:1px dotted #999999;
+	font-size:12px;
+	line-height:30px;
+}
+#bottomMenu li,#topMenu li{
+	display:inline;
+}
+#topMenu{
+	position:absolute;
+	top:27px;
+	right:0;
+}
+#topMenu li a{
+	margin:0 8px;
+	background:inherit;
+	color:#777777;
+	display:block;
+	font-size:90%;
+	float:left;
+	height:24px;
+	line-height:22px;
+	margin:8px 8px 0 0;
+	padding:0 15px;
+	text-decoration:none;
+}
+#topMenu .current-show a{
+	background:none repeat scroll 0 0 #FFFFFF;
+	border-color:#777777 #777777 #FFFFFF;
+	border-style:solid;
+	border-width:1px;
+	font-size:120%;
+	color:black;
+	height:28px;
+	line-height:30px;
+	margin-top:3px;
+	padding:0 15px;
+}
+.problem-statistics{
+	color:#444444;
+	width:234px;
+}
+.problem-statistics dt{
+	float: left;
+    margin-bottom: 5px;
+    margin-right: 18px;
+}
+.problem-statistics dd{
+	margin-bottom:7px;
+	font-weight:bold;
+	font-size:14px;
+}
+.problem-statistics h4{
+	color: #222222;
+	margin:18px 0 5px 0;
+}
+.tag{
+	margin:15px 0;
+}
+.tag h4{
+	margin-bottom:2px;
+}
+.tag li{
+	font-weight:bold;
+}
+.tag li a{
+	background-color:#E0EAF1;
+	border-bottom:1px solid #3E6D8E;
+	border-right:1px solid #7F9FB6;
+	color:#3E6D8E;
+	font-size:90%;
+	font-weight:normal;
+	line-height:2.4;
+	margin:2px 2px 2px 0;
+	padding:3px 4px;
+	text-decoration:none;
+	white-space:nowrap;
+}
+.hidden{
+	display:none;
+}
+.add-tag dd{
+	margin-bottom:5px;
+}
+.add-tag{
+	margin-bottom:15px;
+}
+.my-solutions{
+	margin-top:5px;
+	font-size:12px;
+}
+.my-solutions .no{
+	width:17px;
+	padding:0 3px;
+}
+.my-solutions .result{
+	padding:0 3px;
+}
+.my-solutions .time{
+	width:75px;
+	padding:0 5px;
+}
+.problem-status table{
+	width:692px;
+	font-size:12px;
+}
+.problem-status table td{
+	border-bottom:1px dotted #999999;
+	padding:0 5px;
+}
+.problem-status .code-length{
+	text-align:center;
+	width:60px;
+}
+.problem-status .result{
+	width:150px;
+}
+.problem-status .date{
+	width:75px;
+}
+.problem-my-statistics{
+	font-size:12px;
+}
+.problem-my-statistics h4{
+	font-weight:bold;
+	margin-bottom:5px;
+}
+.problem-my-statistics .result{
+	width:150px;
+}
+#rankingList .rank{
+	width:40px;
+}
+#rankingList table td img{
+	vertical-align:middle;
+	margin:5px 0;
+}
+#rankingList table td span{
+	padding-left:8px;
+}
+#rankingList .accepted{
+	width:60px;
+}
+#rankingList .submissions{
+	width:70px;
+}
+#rankingList .ratio{
+	width:70px;
+}
+/*
+#rankingList .user-name{
+	width:155px;
+}
+*/
+.status-search{
+	font-size:12px;
+	margin-bottom:15px;
+}
+.status-search dt,.status-search dd{
+	display:inline;
+}
+.status-search dd{
+	margin-right:10px;
+}
+#problemStatus{
+	margin-top:10px;
+}
+#problemStatus table{
+	width:100%;
+}
+#problemStatus .result{
+	width:140px;
+}
+#problemStatus .code-length{
+	width:55px;
+	text-align:center;
+}
+#problemStatus .title{
+	width:205px;
+}
+#problemStatus .memory{
+	width:50px;
+}
+#problemStatus .spending-time{
+	width:40px;
+}
+#problemStatus .language{
+	width:50px;
+}
+#problemStatus .date{
+	width:90px;
+}
+.submitted-solutions dt, .participants dt{
+	color:#808185;
+	font-size:32px;
+	font-weight:bold;
+	margin-bottom:12px;
+}
+.submitted-solutions dd, .participants dd{
+	font-size:12px;
+}
+
+.timeBar dt,.timeBar dd{
+	position:relative;
+}
+.timeBar .start-time{
+	left:50px;
+	top:71px;
+}
+.timeBar .start-time-dd{
+	left:8px;
+	top:22px;
+	font-size:16px;
+	font-weight:bold;
+}
+.timeBar .end-time{
+	left:603px;
+	top:28px;
+}
+.timeBar .end-time-dd{
+	left:558px;
+	top:-21px;
+	font-size:16px;
+	font-weight:bold;
+}
+.timeBar .current-time{
+	left:302px;
+	top:-79px;
+	font-size:16px;
+	font-weight:bold;
+}
+.timeBar .current-time-dd{
+	left:326px;
+	top:-49px;
+	color:red;
+	font-size:16px;
+}
+.contest-description{
+	border-top:1px dotted #ccc;
+	border-bottom:1px dotted #ccc;
+	padding:15px 0;
+}
+.contest-problem table{
+	margin-top:15px;
+	width:450px;
+}
+.compile-info dl dt{
+	float:left;
+	width:70px;
+	text-align:right;
+	height:15px;
+	padding-right:12px;
+}
+.submitStatus h3,.compile-info h3{
+	font-size:14px;
+	font-weight:normal;
+	margin-top:1.5em;
+}
+.compile-status{
+	font-size:22px;
+	margin-bottom:15px;
+}
+.sh_c{
+	margin-bottom:15px;
+}
+/*  clarify  */
+#clarify table{
+	width:100%;
+}
+#clarify a,#clarify a:visited{
+	color:#231F17;
+}
+#clarify a:hover{
+	color:#F24A33;
+}
+#clarify table td{
+	padding:3px 5px;
+	
+}
+#clarify .topic{
+	width:460px;
+}
+#clarify table tbody tr{
+	line-height:16px;
+}
+#clarify .category, #clarify .replies{
+	width:50px;
+	text-align:center;
+}
+#clarify .replies{
+	padding-right:24px;
+}
+#clarify .author,#clarify .last-post{
+	width:80px;
+}
+#clarify .author span, #clarify .last-post span{
+	font-size:12px;
+	display:block;
+}
+#clarify .author cite,#clarify .last-post cite{
+	font-size:10px;
+}
+#clarify h4{
+	margin:20px 0 10px 0;
+	border-bottom:1px solid #ccc;
+	padding-bottom:3px;
+}
+.new-topic dt{
+	float:left;
+	margin-right:15px;
+}
+.new-topic dd{
+	margin-bottom:15px;
+}
+.new-post-submit{
+	margin-left:43px;
+}
+/* end of clarify */
+
+
+/* submit */
+#submit h3{
+	font-size:16px;
+	margin-bottom:15px;
+}
+#submit dt{
+	float:left;
+	height:82px;
+	width:80px;
+	text-align:right;
+	padding-right:15px;
+}
+#submit dd{
+	margin-bottom:15px;
+}
+#submit dd textarea{
+	width:600px;
+	height:300px;
+}
+.submit-button{
+	margin-left:100px;
+}
+.submit-reset{
+	margin-left:15px;
+}
+/* end of submit */
+
+/* discuss */
+#forumTopic ul li{
+	border-bottom:1px solid #CCC;
+}
+.post{
+	float:left;
+	margin-left:10px;
+	width:614px;
+	margin-top:6px;
+}
+.post .time{
+	font-size:12px;
+	color:#888888;	
+}
+.post p{
+	font-size:13px;
+	margin:4px 0 15px;
+	width:580px;
+	word-wrap:break-word;
+}
+.actions{
+	float:right;
+}
+#forumTopic .user-picture{
+	float:left;
+	margin:11px 0;
+}
+.reply-box{
+	background:#EDEFF4;
+	margin-top:15px;
+	padding:10px;
+}
+/* end of discuss */
+
+#footer .wrapper{
+	border-top:1px dotted #CCC;
+	background:white;
+	overflow:hidden;
+}
+.past-contest ul span{
+	padding-left:10px;
+}
+.contest-info{
+	position:relative;
+}
+
+.notification{
+	color:red;
+}
+
+
+.starstop {
+    background: url("../images/all_star.gif") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 14px;
+    margin: 0 3px;
+    width: 50px;
+}
+
+.stars1{
+	 background-position: left 15px;
+}
+
+.stars2{
+	 background-position: left 30px;
+}
+
+.stars3{
+	 background-position: left 45px;
+}
+
+.stars4{
+	 background-position: left 60px;
+}
+
+.stars5{
+	 background-position: left 75px;
+}
+
+
+.fl {
+    float: left;
+}
+
+.power {
+    background: none repeat scroll 0 0 #F5CBAD;
+    float: left;
+    height: 14px;
+    margin: 0 3px;
+}
+
+#dialog {
+    -moz-border-radius: 4px 4px 4px 4px;
+    background-color: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    left: 50%;
+    margin-top: -140px;
+    padding: 0;
+    position: fixed;
+    top: 50%;
+    width: 550px;
+    z-index: 103;
+}
+
+#overlay {
+    -moz-border-radius: 6px 6px 6px 6px;
+    background-color: #333333;
+    left: 50%;
+    margin-left: -13px;
+    margin-top: -148px;
+    opacity: 0.2;
+    position: fixed;
+    top: 50%;
+    width: 588px;
+    z-index: 102;
+}
+
+.rdact {
+    background-color: #EEFFEE;
+    border-bottom: 1px solid #AAFFAA;
+    border-right: 1px solid #AAFFAA;
+    color: #BBBBBB;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 2px;
+    padding: 3px 3px 2px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.gract {
+    background-color: #EEFFEE;
+    border-bottom: 1px solid #AAFFAA;
+    border-right: 1px solid #AAFFAA;
+    color: #006600;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 2px;
+    padding: 3px 3px 2px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* print */
+#print h3{
+	font-size:16px;
+	margin-bottom:15px;
+}
+#print dt{
+	float:left;
+	height:35px;
+	width:80px;
+	text-align:right;
+	padding-right:15px;
+}
+#print dd{
+	margin-bottom:15px;
+}
+#print dd textarea{
+	width:600px;
+	height:300px;
+}
+/* end of print */
