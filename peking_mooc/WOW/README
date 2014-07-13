@@ -1,9 +1,9 @@
 WOW project description: 
-This is a simplied version of world of warriors game which take input from console and output text to simulate the game. The chrome translated description file in html format can be found in description folder. 
+This is a simplied version of world of warriors game which takes input from the console and print text out to simulate the game. The chrome translated description file in html format can be found in description folder. 
 
-How to build and run under linux using GCC. 
-1. You can make compile the files and create an execute file(WOW) by running command "make" from the console.
+How to build and run in linux using gcc. 
+1. You can make compile the files and create an executable file(WOW) by running command "make" from the console.
 
-2. You can run the program with test data in in.txt by command  "./WOW < in.txt" from the console. The output is quite long to examine, you can redirect the out to a result file by issuing command "./WOW < in.txt > result.txt" 
+2. You can run the program with test data in "in.txt" by command  "./WOW < in.txt" from the console. The output is quite long to examine, you can redirect the out to a result file by issuing command "./WOW < in.txt > result.txt." 
    
-3. You can clean the object files and runnable program by issuing "make clean" command from the console. 
+3. You can delete the object files and the runnable program by calling "make clean" command at the console. 
